@@ -1,0 +1,365 @@
+body {
+    background-color: black;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    background: linear-gradient(315deg, #e84393 0%, #000000 74%);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  }
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+  h1 {
+    color: #FF10F0;
+    text-align: center;
+  }
+  h2 {
+    color: black;
+    text-align: left;
+  }
+  
+  p {
+    color: #FF10F0;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  p2 {
+    color: black;
+    text-align: right-aligned;
+    font-size: 20px;
+  }
+  p3 {
+    color: #FF10F0;
+    text-align: left-aligned;
+    font-size: 20px;
+  }
+  p4 {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  @keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animated-gradient-text {
+    background: linear-gradient(90deg, white, black);
+    background-size: 220%,220%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-animation 10s ease infinite;
+    text-align: left-aligned;
+
+}
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .topcentered {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .leftcentered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  .regular-content {
+    /* Ensures text and elements within are aligned to the left */
+    text-align: left;
+
+    /* Adds some padding around the content for better readability */
+    padding: 20px;
+
+    /* Sets a maximum width to prevent lines of text from becoming too long on wide screens */
+    max-width: 800px;
+
+    /* Centers the container while keeping the text left-aligned */
+    margin-top: 50px;
+
+    /* Sets a default font similar to what was used previously, change as necessary */
+
+    /* You can add more styling here based on your previous CSS patterns */
+}
+  .button {
+    background-color: black;
+    border: 2px solid #FF10F0;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .button2 {
+    background-color: black;
+    border: 2px solid #FF10F0;
+    color: white;
+    padding: 15px 32px;
+    text-align: left;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal fraction of available space */
+    gap: 265px; /* Increased space between grid items */
+    padding: 5px; /* Padding around the grid */
+    width: 200%; /* Adjust the width as needed */
+    max-width: 800px; /* Increased maximum width of the grid */
+  }
+  
+  .grid-item {
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent white */
+    border: 1px solid rgb(246, 246, 246); /* Black border */
+    padding-top: calc((100% - 40px) / 3); /* Increased padding-top for larger squares, adjust for gap */
+    text-align: center; /* Center the text horizontally */
+    font-size: 30px; /* Large font size */
+    position: relative; /* For centering content inside squares */
+  }
+  
+  .grid-item::before {
+    content: '';
+    float: left;
+    padding-top: 100%; /* Equal width and height */
+  }
+  
+  .grid-item > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .button3 {
+    background-color: black;
+    border: 2px solid #FF10F0;
+    color: white;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color:#FF10F0;
+    color: white;
+  }
+  .button2:hover {
+    background-color:#FF10F0;
+    color: white;
+  }
+  .button3:hover {
+    background-color:#FF10F0;
+    color: white;
+  }
+
+  .logos {
+    overflow: hidden;
+    padding: 20px 0;
+    white-space: nowrap;
+    position: relative;
+  }
+  .logos::before, .logos::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left,rgba(255,255,255,0), rgb(240, 4, 185));
+  
+  }
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right,rgba(255,255,255,0), rgb(240, 4, 185));
+  
+  }
+  .logos:hover .logos-slide{
+    animation-play-state: paused;
+  }
+  .logos-slide {
+    display: inline-block;
+    white-space: nowrap;
+    animation: 20s slide infinite linear;
+  }
+  .logos-slide img{
+    height: 150px;
+    margin: 0 50px;
+  }
+
+  @keyframes slide {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+  }
+
+
+  .nav {
+    /* height: var(--header-height); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+  }
+  
+  .nav__logo {
+    display: inline;
+    width: 1.5rem;
+  }
+  
+  .nav__logo img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .nav__toggle {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+  
+  /* @media screen and (max-width: 767px) {
+    .nav__menu {
+      position: fixed;
+      background-color: var(--body-color);
+      top: -100%;
+      left: 0;
+      width: 100%;
+      padding: 4rem 0 3rem;
+      transition: .4s;
+    }
+  }
+   */
+   .nav__menu{
+    width: 100%;
+   }
+   nav.container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Add any other styles you had previously for .nav.container here */
+}
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 95vw;
+  }
+  
+  .nav__link {
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    transition: .4s;
+  }
+  
+  .nav__item a{
+    text-decoration: none;
+  }
+  .nav__link:hover {
+    /* background: black; */
+    color: black;
+  }
+  
+  .nav__close {
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+  
+  /* show menu */
+  .show-menu {
+    top: 0;
+  }
+  
+  /* Change background header */
+  .scroll-header {
+    background-color: var(--body-color);
+  }
+  
+  /* Active link */
+  .active-link {
+    background: var(--white-color);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .fa {
+    padding: 200px;
+    font-size: 30px;
+    width: 30px;
+    text-align: right-aligned;
+    text-decoration: none;
+    border-radius: 50%;
+    background: black;
+    color: white;
+
+  }
+  
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
